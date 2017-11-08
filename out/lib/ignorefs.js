@@ -33,7 +33,7 @@
         _ref = opts.ignorePaths;
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
           ignorePath = _ref[_i];
-          if (path.indexOf(ignorePath) === 0) {
+          if (path.indexOf(ignorePath + '/') > -1) {
             result = true;
             break;
           }
